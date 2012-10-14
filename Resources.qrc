@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="add">data/icons/add.PNG</file>
+        <file alias="closeproject">data/icons/close_project.png</file>
+        <file alias="delete">data/icons/delete.PNG</file>
+        <file alias="newmap">data/icons/map_new.png</file>
+        <file alias="movedown">data/icons/movedown.png</file>
+        <file alias="moveup">data/icons/moveup.PNG</file>
+        <file alias="newproject">data/icons/new_project.png</file>
+        <file alias="openproject">data/icons/open_project.png</file>
+        <file alias="redo">data/icons/redo.PNG</file>
+        <file alias="saveproject">data/icons/save_project.png</file>
+        <file alias="undo">data/icons/undo.png</file>
+    </qresource>
+</RCC>
