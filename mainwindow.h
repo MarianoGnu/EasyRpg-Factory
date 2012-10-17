@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QPushButton>
 #include "factory.h"
 
 
@@ -24,20 +25,51 @@ public:
 private slots:
     void on_action_Quit_triggered();
 
-    void on_lineFilter_textChanged(const QString &arg1);
-
     void on_pushCharacter_clicked();
 
     void on_pushCurve_clicked();
 
+    void on_pushSkill_clicked();
+
+    void on_pushItem_clicked();
+
+    void on_pushAttribute_clicked();
+
+    void on_pushCondition_clicked();
+
+    void on_pushFaceSets_clicked();
+
+    void on_pushAnimationSet_clicked();
+
+    void on_pushCharaSets_clicked();
+
+    void on_pushVocabulary_clicked();
+
+    void on_pushSystem_clicked();
+
+    void on_pushCommonEvents_clicked();
+
+    void on_actionDatabase_Manager_triggered();
+
+    void on_actionMaterial_Manager_triggered();
+
+    void on_actionScene_Editor_triggered();
+
+    void on_actionM_ap_Editor_triggered();
+
+    void on_lineCharacterFilter_textChanged(const QString &arg1);
+
+    void on_lineCurveFilter_textChanged(const QString &arg1);
+
+
+    void on_lineCharaSetFilter_textChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
     Factory * factory;
-    int databaseCurrentPage;
-
-    //methods
-    void uncheck_database_buttons();
-    void hide_database_pages();
+    QPushButton *currentDatabaseButton;
+    QWidget *currentDatabasePage;
+    QWidget *currentView;
 };
 
 #endif // MAINWINDOW_H
