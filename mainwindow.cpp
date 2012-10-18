@@ -7,9 +7,9 @@ MainWindow::MainWindow(QWidget *parent, Factory * controller) :
 {
     this->factory = controller;
     ui->setupUi(this);
-    currentDatabasePage = ui->stackedDatabase->currentWidget();
     currentDatabaseButton = ui->pushCharacter;
-    currentView = ui->stackedMain->currentWidget();
+    ui->stackedDatabase->setCurrentWidget(ui->pageCharacter);
+    ui->stackedMain->setCurrentWidget(ui->pageMapEditor);
 }
 
 MainWindow::~MainWindow()
@@ -28,11 +28,9 @@ void MainWindow::on_pushCharacter_clicked()
     currentDatabaseButton->setChecked(false);
     ui->pushCharacter->setChecked(true);
     //Handle Page's status
-    currentDatabasePage->hide();
-    ui->pageCharacter->show();
+    ui->stackedDatabase->setCurrentWidget(ui->pageCharacter);
     //actualize pointers
     currentDatabaseButton = ui->pushCharacter;
-    currentDatabasePage = ui->pageCharacter;
 }
 
 void MainWindow::on_pushCurve_clicked()
@@ -41,11 +39,9 @@ void MainWindow::on_pushCurve_clicked()
     currentDatabaseButton->setChecked(false);
     ui->pushCurve->setChecked(true);
     //Handle Page's status
-    currentDatabasePage->hide();
-    ui->pageCurve->show();
+    ui->stackedDatabase->setCurrentWidget(ui->pageCurve);
     //actualize pointers
     currentDatabaseButton = ui->pushCurve;
-    currentDatabasePage = ui->pageCurve;
 }
 
 void MainWindow::on_pushSkill_clicked()
@@ -54,11 +50,9 @@ void MainWindow::on_pushSkill_clicked()
     currentDatabaseButton->setChecked(false);
     ui->pushSkill->setChecked(true);
     //Handle Page's status
-    currentDatabasePage->hide();
-    ui->pageSkill->show();
+    ui->stackedDatabase->setCurrentWidget(ui->pageSkill);
     //actualize pointers
     currentDatabaseButton = ui->pushSkill;
-    currentDatabasePage = ui->pageSkill;
 }
 
 void MainWindow::on_pushItem_clicked()
@@ -67,11 +61,9 @@ void MainWindow::on_pushItem_clicked()
     currentDatabaseButton->setChecked(false);
     ui->pushItem->setChecked(true);
     //Handle Page's status
-    currentDatabasePage->hide();
-    ui->pageItem->show();
+    ui->stackedDatabase->setCurrentWidget(ui->pageItem);
     //actualize pointers
     currentDatabaseButton = ui->pushItem;
-    currentDatabasePage = ui->pageItem;
 }
 
 void MainWindow::on_pushAttribute_clicked()
@@ -80,11 +72,9 @@ void MainWindow::on_pushAttribute_clicked()
     currentDatabaseButton->setChecked(false);
     ui->pushAttribute->setChecked(true);
     //Handle Page's status
-    currentDatabasePage->hide();
-    ui->pageAttribute->show();
+    ui->stackedDatabase->setCurrentWidget(ui->pageAttribute);
     //actualize pointers
     currentDatabaseButton = ui->pushAttribute;
-    currentDatabasePage = ui->pageAttribute;
 }
 
 void MainWindow::on_pushCondition_clicked()
@@ -93,11 +83,9 @@ void MainWindow::on_pushCondition_clicked()
     currentDatabaseButton->setChecked(false);
     ui->pushCondition->setChecked(true);
     //Handle Page's status
-    currentDatabasePage->hide();
-    ui->pageCondition->show();
+    ui->stackedDatabase->setCurrentWidget(ui->pageCondition);
     //actualize pointers
     currentDatabaseButton = ui->pushCondition;
-    currentDatabasePage = ui->pageCondition;
 }
 
 void MainWindow::on_pushFaceSets_clicked()
@@ -106,11 +94,9 @@ void MainWindow::on_pushFaceSets_clicked()
     currentDatabaseButton->setChecked(false);
     ui->pushFaceSets->setChecked(true);
     //Handle Page's status
-    currentDatabasePage->hide();
-    ui->pageFaceSet->show();
+    ui->stackedDatabase->setCurrentWidget(ui->pageFaceSet);
     //actualize pointers
     currentDatabaseButton = ui->pushFaceSets;
-    currentDatabasePage = ui->pageFaceSet;
 }
 
 void MainWindow::on_pushAnimationSet_clicked()
@@ -119,11 +105,9 @@ void MainWindow::on_pushAnimationSet_clicked()
     currentDatabaseButton->setChecked(false);
     ui->pushAnimationSet->setChecked(true);
     //Handle Page's status
-    currentDatabasePage->hide();
-    ui->pageAnimationSet->show();
+    ui->stackedDatabase->setCurrentWidget(ui->pageAnimationSet);
     //actualize pointers
     currentDatabaseButton = ui->pushAnimationSet;
-    currentDatabasePage = ui->pageAnimationSet;
 }
 
 void MainWindow::on_pushCharaSets_clicked()
@@ -132,11 +116,9 @@ void MainWindow::on_pushCharaSets_clicked()
     currentDatabaseButton->setChecked(false);
     ui->pushCharaSets->setChecked(true);
     //Handle Page's status
-    currentDatabasePage->hide();
-    ui->pageCharaSet->show();
+    ui->stackedDatabase->setCurrentWidget(ui->pageCharaSet);
     //actualize pointers
     currentDatabaseButton = ui->pushCharaSets;
-    currentDatabasePage = ui->pageCharaSet;
 }
 
 void MainWindow::on_pushVocabulary_clicked()
@@ -145,11 +127,9 @@ void MainWindow::on_pushVocabulary_clicked()
     currentDatabaseButton->setChecked(false);
     ui->pushVocabulary->setChecked(true);
     //Handle Page's status
-    currentDatabasePage->hide();
-    ui->pageVocabulary->show();
+    ui->stackedDatabase->setCurrentWidget(ui->pageVocabulary);
     //actualize pointers
     currentDatabaseButton = ui->pushVocabulary;
-    currentDatabasePage = ui->pageVocabulary;
 }
 
 void MainWindow::on_pushSystem_clicked()
@@ -158,11 +138,9 @@ void MainWindow::on_pushSystem_clicked()
     currentDatabaseButton->setChecked(false);
     ui->pushSystem->setChecked(true);
     //Handle Page's status
-    currentDatabasePage->hide();
-    ui->pageSystem->show();
+    ui->stackedDatabase->setCurrentWidget(ui->pageSystem);
     //actualize pointers
     currentDatabaseButton = ui->pushSystem;
-    currentDatabasePage = ui->pageSystem;
 }
 
 void MainWindow::on_pushCommonEvents_clicked()
@@ -170,40 +148,32 @@ void MainWindow::on_pushCommonEvents_clicked()
     //Handle buttons's status
     currentDatabaseButton->setChecked(false);
     ui->pushCommonEvents->setChecked(true);
-    //Handle Page's status
-    currentDatabasePage->hide();
-    ui->pageCommonEvents->show();
+    //Handle Page
+    ui->stackedDatabase->setCurrentWidget(ui->pageCommonEvents);
+
     //actualize pointers
     currentDatabaseButton = ui->pushCommonEvents;
-    currentDatabasePage = ui->pageCommonEvents;
+
 }
 
 void MainWindow::on_actionDatabase_Manager_triggered()
 {
-    currentView->hide();
-    ui->pageDatabase->show();
-    currentView = ui->pageDatabase;
+    ui->stackedMain->setCurrentWidget(ui->pageDatabase);
 }
 
 void MainWindow::on_actionMaterial_Manager_triggered()
 {
-    currentView->hide();
-    ui->pageMaterialManager->show();
-    currentView = ui->pageMaterialManager;
+    ui->stackedMain->setCurrentWidget(ui->pageMaterialManager);
 }
 
 void MainWindow::on_actionScene_Editor_triggered()
 {
-    currentView->hide();
-    ui->pageSceneEditor->show();
-    currentView = ui->pageSceneEditor;
+ui->stackedMain->setCurrentWidget(ui->pageSceneEditor);
 }
 
 void MainWindow::on_actionM_ap_Editor_triggered()
 {
-    currentView->hide();
-    ui->pageMapEditor->show();
-    currentView = ui->pageMapEditor;
+ui->stackedMain->setCurrentWidget(ui->pageMapEditor);
 }
 
 
@@ -247,6 +217,20 @@ void MainWindow::on_lineCharaSetFilter_textChanged(const QString &arg1)
         }
         else{
           ui->listCharaSet->item(l)->setHidden(true);
+        }
+    }
+}
+
+void MainWindow::on_lineSkillFilter_textChanged(const QString &arg1)
+{
+    int listskillSize = ui->listSkill->count();
+
+    for(int l = 0; l < listskillSize; l++){
+        if (ui->listSkill->item(l)->text().contains(arg1, Qt::CaseInsensitive)){
+            ui->listSkill->item(l)->setHidden(false);
+        }
+        else{
+          ui->listSkill->item(l)->setHidden(true);
         }
     }
 }

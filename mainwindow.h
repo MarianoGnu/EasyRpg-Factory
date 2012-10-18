@@ -64,12 +64,12 @@ private slots:
 
     void on_lineCharaSetFilter_textChanged(const QString &arg1);
 
+    void on_lineSkillFilter_textChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
     Factory * factory;
     QPushButton *currentDatabaseButton;
-    QWidget *currentDatabasePage;
-    QWidget *currentView;
 };
 
 #endif // MAINWINDOW_H

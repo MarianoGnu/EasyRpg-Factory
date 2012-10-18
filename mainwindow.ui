@@ -193,7 +193,7 @@
         <item row="2" column="0">
          <widget class="QStackedWidget" name="stackedDatabase">
           <property name="currentIndex">
-           <number>2</number>
+           <number>3</number>
           </property>
           <widget class="QWidget" name="pageCharacter">
            <layout class="QGridLayout" name="gridLayout_9">
@@ -211,7 +211,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>340</width>
-                 <height>1329</height>
+                 <height>1390</height>
                 </rect>
                </property>
                <layout class="QGridLayout" name="gridLayout_3">
@@ -285,7 +285,7 @@
                   </layout>
                  </widget>
                 </item>
-                <item row="4" column="0" colspan="2">
+                <item row="5" column="0" colspan="2">
                  <widget class="QGroupBox" name="groupCharacterCurve">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -404,7 +404,7 @@
                   </layout>
                  </widget>
                 </item>
-                <item row="5" column="0">
+                <item row="6" column="0">
                  <widget class="QGroupBox" name="groupCharacterChara">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -434,7 +434,7 @@
                   </layout>
                  </widget>
                 </item>
-                <item row="7" column="0">
+                <item row="8" column="0">
                  <widget class="QGroupBox" name="groupCharacterAnimationSet">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -467,7 +467,7 @@
                   </layout>
                  </widget>
                 </item>
-                <item row="3" column="0" colspan="2">
+                <item row="4" column="0" colspan="2">
                  <widget class="QGroupBox" name="groupCharacterCritical">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -528,7 +528,7 @@
                   </layout>
                  </widget>
                 </item>
-                <item row="9" column="0" colspan="2">
+                <item row="10" column="0" colspan="2">
                  <widget class="QGroupBox" name="groupCharacterEquipment">
                   <property name="minimumSize">
                    <size>
@@ -620,7 +620,7 @@
                   </layout>
                  </widget>
                 </item>
-                <item row="11" column="0" colspan="2">
+                <item row="12" column="0" colspan="2">
                  <widget class="QGroupBox" name="groupCharacterSkill">
                   <property name="minimumSize">
                    <size>
@@ -704,7 +704,7 @@
                   </layout>
                  </widget>
                 </item>
-                <item row="12" column="0">
+                <item row="13" column="0">
                  <widget class="QGroupBox" name="groupCharacterConditionEffect">
                   <property name="minimumSize">
                    <size>
@@ -788,7 +788,7 @@
                   </layout>
                  </widget>
                 </item>
-                <item row="12" column="1">
+                <item row="13" column="1">
                  <widget class="QGroupBox" name="groupCharacterAfflictedCondition">
                   <property name="minimumSize">
                    <size>
@@ -872,7 +872,7 @@
                   </layout>
                  </widget>
                 </item>
-                <item row="10" column="0" colspan="2">
+                <item row="11" column="0" colspan="2">
                  <widget class="QGroupBox" name="groupCharacterUnarmedAnimation">
                   <property name="minimumSize">
                    <size>
@@ -890,7 +890,7 @@
                   </layout>
                  </widget>
                 </item>
-                <item row="5" column="1">
+                <item row="6" column="1">
                  <widget class="QGroupBox" name="groupCharacterFaceSet">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -923,7 +923,7 @@
                   </layout>
                  </widget>
                 </item>
-                <item row="8" column="0" colspan="2">
+                <item row="9" column="0" colspan="2">
                  <widget class="QGroupBox" name="groupCharacterOptions">
                   <property name="minimumSize">
                    <size>
@@ -960,6 +960,37 @@
                     <widget class="QCheckBox" name="checkStrongDefense">
                      <property name="text">
                       <string>Strong Defense</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="3" column="0" colspan="2">
+                 <widget class="QGroupBox" name="groupCharacterVar">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>55</height>
+                   </size>
+                  </property>
+                  <property name="title">
+                   <string>Variables</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_23">
+                   <item row="0" column="0">
+                    <widget class="QPushButton" name="pushCharacterVar">
+                     <property name="text">
+                      <string>Edit Variables...</string>
                      </property>
                     </widget>
                    </item>
@@ -1362,7 +1393,7 @@
              </widget>
             </item>
             <item row="0" column="1">
-             <widget class="QScrollArea" name="scrollCharacterProperties_2">
+             <widget class="QScrollArea" name="scrollCurveProperties">
               <property name="widgetResizable">
                <bool>true</bool>
               </property>
@@ -1905,7 +1936,7 @@
                <property name="geometry">
                 <rect>
                  <x>0</x>
-                 <y>-133</y>
+                 <y>0</y>
                  <width>340</width>
                  <height>527</height>
                 </rect>
@@ -2074,12 +2105,12 @@
            </layout>
           </widget>
           <widget class="QWidget" name="pageSkill">
-           <layout class="QGridLayout" name="gridLayout_61">
+           <layout class="QGridLayout" name="gridLayout_62">
             <property name="margin">
              <number>0</number>
             </property>
             <item row="0" column="0">
-             <widget class="QFrame" name="gridCurveList_3">
+             <widget class="QFrame" name="gridSkillList">
               <property name="minimumSize">
                <size>
                 <width>180</width>
@@ -2097,7 +2128,7 @@
                 <number>0</number>
                </property>
                <item row="0" column="0" colspan="4">
-                <widget class="QListWidget" name="listCurve_3">
+                <widget class="QListWidget" name="listSkill">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
@@ -2138,21 +2169,21 @@
                 </widget>
                </item>
                <item row="1" column="0" colspan="4">
-                <layout class="QGridLayout" name="gridCurveFilter_3">
+                <layout class="QGridLayout" name="gridSkillFilter">
                  <item row="0" column="0">
-                  <widget class="QLabel" name="labelCurveFilter_3">
+                  <widget class="QLabel" name="labelSkillFilter">
                    <property name="text">
                     <string>Filter: </string>
                    </property>
                   </widget>
                  </item>
                  <item row="0" column="1">
-                  <widget class="QLineEdit" name="lineCurveFilter_3"/>
+                  <widget class="QLineEdit" name="lineSkillFilter"/>
                  </item>
                 </layout>
                </item>
                <item row="2" column="0">
-                <widget class="QToolButton" name="toolAddCurve_3">
+                <widget class="QToolButton" name="toolAddSkill">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -2181,7 +2212,7 @@
                 </widget>
                </item>
                <item row="2" column="1">
-                <widget class="QToolButton" name="toolMoveCurveUp_3">
+                <widget class="QToolButton" name="toolMoveSkillUp">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -2210,7 +2241,7 @@
                 </widget>
                </item>
                <item row="2" column="2">
-                <widget class="QToolButton" name="toolMoveCurveDown_3">
+                <widget class="QToolButton" name="toolMoveSkillDown">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -2239,7 +2270,7 @@
                 </widget>
                </item>
                <item row="2" column="3">
-                <widget class="QToolButton" name="toolDeleteCurve_3">
+                <widget class="QToolButton" name="toolDeleteSkill">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -2271,22 +2302,22 @@
              </widget>
             </item>
             <item row="0" column="1">
-             <widget class="QScrollArea" name="scrollCharacterProperties_4">
+             <widget class="QScrollArea" name="scrollSkillProperties">
               <property name="widgetResizable">
                <bool>true</bool>
               </property>
-              <widget class="QWidget" name="scrollCharacterPropertiesContents_4">
+              <widget class="QWidget" name="scrollSkillPropertiesContents">
                <property name="geometry">
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>340</width>
-                 <height>527</height>
+                 <width>357</width>
+                 <height>394</height>
                 </rect>
                </property>
-               <layout class="QGridLayout" name="gridLayout_23">
+               <layout class="QGridLayout" name="gridLayout_55">
                 <item row="0" column="0">
-                 <widget class="QGroupBox" name="groupCharaSetName_2">
+                 <widget class="QGroupBox" name="groupSkilltName">
                   <property name="enabled">
                    <bool>true</bool>
                   </property>
@@ -2308,9 +2339,9 @@
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
                   </property>
-                  <layout class="QGridLayout" name="gridLayout_55">
+                  <layout class="QGridLayout" name="gridLayout_56">
                    <item row="0" column="0">
-                    <widget class="QLineEdit" name="lineCharaSetName_2">
+                    <widget class="QLineEdit" name="lineSkillName">
                      <property name="sizePolicy">
                       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                        <horstretch>0</horstretch>
@@ -2323,119 +2354,6 @@
                        <height>0</height>
                       </size>
                      </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-                <item row="1" column="0">
-                 <widget class="QGroupBox" name="groupBox_5">
-                  <property name="maximumSize">
-                   <size>
-                    <width>16777215</width>
-                    <height>55</height>
-                   </size>
-                  </property>
-                  <property name="title">
-                   <string>Action</string>
-                  </property>
-                  <layout class="QGridLayout" name="gridLayout_56">
-                   <item row="0" column="0">
-                    <widget class="QComboBox" name="comboBox_2"/>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-                <item row="2" column="0">
-                 <widget class="QGroupBox" name="groupBox_6">
-                  <property name="title">
-                   <string>Chara Properties</string>
-                  </property>
-                  <layout class="QGridLayout" name="gridLayout_57">
-                   <item row="0" column="0">
-                    <widget class="QGroupBox" name="groupBox_7">
-                     <property name="title">
-                      <string>Conditions</string>
-                     </property>
-                     <layout class="QGridLayout" name="gridLayout_58">
-                      <item row="0" column="0">
-                       <widget class="QTableWidget" name="tableWidget_2">
-                        <property name="minimumSize">
-                         <size>
-                          <width>0</width>
-                          <height>100</height>
-                         </size>
-                        </property>
-                        <property name="editTriggers">
-                         <set>QAbstractItemView::DoubleClicked</set>
-                        </property>
-                        <property name="tabKeyNavigation">
-                         <bool>false</bool>
-                        </property>
-                        <property name="showDropIndicator" stdset="0">
-                         <bool>false</bool>
-                        </property>
-                        <property name="dragDropOverwriteMode">
-                         <bool>false</bool>
-                        </property>
-                        <property name="selectionMode">
-                         <enum>QAbstractItemView::SingleSelection</enum>
-                        </property>
-                        <property name="selectionBehavior">
-                         <enum>QAbstractItemView::SelectRows</enum>
-                        </property>
-                        <property name="rowCount">
-                         <number>1</number>
-                        </property>
-                        <attribute name="verticalHeaderVisible">
-                         <bool>false</bool>
-                        </attribute>
-                        <row/>
-                        <column>
-                         <property name="text">
-                          <string>Name</string>
-                         </property>
-                        </column>
-                        <column>
-                         <property name="text">
-                          <string>Condition</string>
-                         </property>
-                        </column>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QGroupBox" name="groupBox_8">
-                     <property name="title">
-                      <string>Chara</string>
-                     </property>
-                     <layout class="QGridLayout" name="gridLayout_59">
-                      <item row="0" column="0">
-                       <widget class="QGraphicsView" name="graphicsView_2">
-                        <property name="minimumSize">
-                         <size>
-                          <width>0</width>
-                          <height>160</height>
-                         </size>
-                        </property>
-                        <property name="maximumSize">
-                         <size>
-                          <width>16777215</width>
-                          <height>160</height>
-                         </size>
-                        </property>
-                       </widget>
-                      </item>
-                      <item row="1" column="0">
-                       <widget class="QPushButton" name="pushButton_2">
-                        <property name="text">
-                         <string>Change ...</string>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
                     </widget>
                    </item>
                   </layout>
