@@ -276,4 +276,21 @@ void MainWindow::on_sliderSkillVariance_valueChanged(int value)
 void MainWindow::on_comboSkillType_currentIndexChanged(int index)
 {
     ui->stackedSkill->setCurrentIndex(index);
+    switch (index){
+        case 0:
+            ui->scrollSkillPropertiesContents->setMaximumHeight(1019);
+            break;
+        case 1:
+            ui->scrollSkillPropertiesContents->setMaximumHeight(250);
+            break;
+        case 2:
+            ui->scrollSkillPropertiesContents->setMaximumHeight(250);
+            break;
+        case 3:
+            ui->scrollSkillPropertiesContents->setMaximumHeight(420);
+            break;
+        case 4:
+            ui->scrollSkillPropertiesContents->setMaximumHeight(360);
+            break;
+    }
 }
