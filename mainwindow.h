@@ -61,10 +61,23 @@ private slots:
 
     void on_lineCurveFilter_textChanged(const QString &arg1);
 
-
     void on_lineCharaSetFilter_textChanged(const QString &arg1);
 
     void on_lineSkillFilter_textChanged(const QString &arg1);
+
+    void on_pushActions_clicked();
+
+    void on_radioSkillFixedCost_toggled(bool checked);
+
+    void on_radioSkillPercentCost_toggled(bool checked);
+
+    void on_sliderSkillHitChange_valueChanged(int value);
+
+    void on_sliderSkillMindChange_valueChanged(int value);
+
+    void on_sliderSkillVariance_valueChanged(int value);
+
+    void on_comboSkillType_currentIndexChanged(int index);
 
 private:
     Ui::MainWindow *ui;

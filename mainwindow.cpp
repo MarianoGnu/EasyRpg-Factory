@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent, Factory * controller) :
     currentDatabaseButton = ui->pushCharacter;
     ui->stackedDatabase->setCurrentWidget(ui->pageCharacter);
     ui->stackedMain->setCurrentWidget(ui->pageMapEditor);
+    ui->stackedSkill->setCurrentWidget(ui->pageSkillNormal);
 }
 
 MainWindow::~MainWindow()
@@ -143,6 +144,17 @@ void MainWindow::on_pushSystem_clicked()
     currentDatabaseButton = ui->pushSystem;
 }
 
+void MainWindow::on_pushActions_clicked()
+{
+    //Handle buttons's status
+    currentDatabaseButton->setChecked(false);
+    ui->pushActions->setChecked(true);
+    //Handle Page's status
+    ui->stackedDatabase->setCurrentWidget(ui->pageActions);
+    //actualize pointers
+    currentDatabaseButton = ui->pushActions;
+}
+
 void MainWindow::on_pushCommonEvents_clicked()
 {
     //Handle buttons's status
@@ -233,4 +245,35 @@ void MainWindow::on_lineSkillFilter_textChanged(const QString &arg1)
           ui->listSkill->item(l)->setHidden(true);
         }
     }
+}
+
+
+void MainWindow::on_radioSkillFixedCost_toggled(bool checked)
+{
+    ui->spinSkillFixedCost->setEnabled(checked);
+}
+
+void MainWindow::on_radioSkillPercentCost_toggled(bool checked)
+{
+    ui->spinSkillPercentCost->setEnabled(checked);
+}
+
+void MainWindow::on_sliderSkillHitChange_valueChanged(int value)
+{
+    ui->lcdSkillHitChance->display(value);
+}
+
+void MainWindow::on_sliderSkillMindChange_valueChanged(int value)
+{
+    ui->lcdSkillMindChance->display(value);
+}
+
+void MainWindow::on_sliderSkillVariance_valueChanged(int value)
+{
+    ui->lcdSkillVariance->display(value);
+}
+
+void MainWindow::on_comboSkillType_currentIndexChanged(int index)
+{
+    ui->stackedSkill->setCurrentIndex(index);
 }
